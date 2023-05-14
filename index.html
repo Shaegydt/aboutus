@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+  <section class="swiper mySwiper">
+
+    <div class="swiper-wrapper">
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="01.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Shaireen Gayondato</span>
+          <span class="card__name">15 Years Old</span>
+          <p class="card__text">I am a student currently studying at Immaculada Conception College</p>
+          <a href="https://aboumeshei.netlify.app/="button class="card__btn">View More</a></button>
+        </div>
+      </div>
+
+      <div class="card swiper-slide">
+        <div class="card__image">
+          <img src="02.jpg" alt="card image">
+        </div>
+
+        <div class="card__content">
+          <span class="card__title">Jazmin Joy Arce</span>
+          <span class="card__name">15 Years Old</span>
+          <p class="card__text">Hello, I am Jazmin Joy Arce from Grade 9 - Marcos. I like playing games, and talking with my friends.</p>
+          <a href="https://aboutmejaz.netlify.app/="button class="card__btn">View More</a></button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+<!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      effect: "coverflow",
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: "auto",
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 300,
+        modifier: 1,
+        slideShadows: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+      },
+    });
+  </script>
+
+</body>
+</html>
